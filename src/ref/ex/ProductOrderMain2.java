@@ -1,6 +1,8 @@
-package class1.ex;
+package ref.ex;
 
-public class ProductOrderMain {
+import ref.Student;
+
+public class ProductOrderMain2 {
     public static void main(String[] args) {
 
         /**
@@ -18,12 +20,17 @@ public class ProductOrderMain {
         int totalPrice = 0;
         //ITER short_key
         for (ProductOrder item : itemList) {
-            System.out.println("Item : " + item.getProductName()
-                                + " Price : " + item.getPrice()
-                                + " Qty : " + item.getQuantity());
+//            printItem(item);
+            item.printItem();
             totalPrice += item.getTotalPrice();
         }
         System.out.println("Total price : " + totalPrice);
 
     }
+//    static void printItem(ProductOrder item) {
+//        System.out.println("Item : " + item.getProductName()
+//                + " Price : " + item.getPrice()
+//                + " Qty : " + item.getQuantity());
+//    }
+
 }
