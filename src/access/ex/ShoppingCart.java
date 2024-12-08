@@ -28,7 +28,7 @@ public class ShoppingCart {
                 System.out.println("Item :" + item.getName() + ", " + "price :" + item.totalPrice());
             }
         }
-        
+
         System.out.println("Total Ammount : " + calculateTotalPrice());
     }
 
