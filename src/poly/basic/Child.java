@@ -1,4 +1,8 @@
 package poly.basic;
 
-public class Child {
+public class Child extends Parent {
+
+    void childMethod(){
+        System.out.println("Child Method");
+    }
 }
